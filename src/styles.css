@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+.divR{
+    /* display: inline; */
+    height: 40px;
+    width: auto;
+    border-style:groove;  
+    align-content: center;
+   /* // display: inline-block; */
+}
+.other{
+    display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+}
+.class1{
+    background-color: aquamarine;
+}
+.class2{
+    background-color: bisque;
+}
+.class3{
+    background-color: brown;
+}
+.class4{
+    background-color: red;
+}

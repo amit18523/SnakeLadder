@@ -1,0 +1,32 @@
+
+<div>
+    <!-- <button (click)="fun()">click me</button> -->
+   
+</div>
+<div class="other">
+    <div class="divR" *ngFor="let data of uiBoard">
+        <ng-container *ngIf="(data.posNo - 1) % 10 === 0">
+            
+        </ng-container>
+        <div class="divR" [ngClass]="data.postionB === true?'class1':'()'"
+        [ngClass]="[(data.postionA === true &&  data.postionB === true)? 'class3' : '', 
+         (data.postionA === true &&  data.postionB === false) ? 'class1' : '', 
+         (data.postionA === false &&  data.postionB === true) ? 'class2' : '',
+         (data.snakeHead === true) ? 'class4':'',]"
+        >
+            {{data.posNo }}
+        </div>
+    </div>
+</div>
+
+    <div>
+        
+
+  
+    
+    <div> currposofA = {{currPosA + 1}}  currentPosB =  {{currPosB + 1}}</div>
+   
+
+    
+
+</div>
